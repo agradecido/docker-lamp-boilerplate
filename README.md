@@ -1,4 +1,5 @@
 # Docker LAMP Stack Scaffold
+
 Estructura de ficheros y directorios para iniciar un proyecto LAMP usando contenedores Docker.
 
 Incluye:
@@ -58,7 +59,10 @@ Una vez levantados los conentedores podremos acceder al sitio accediendo a https
 2. Acceder a la consola
     ```docker exec -it ID_CONTAINER /bin/bash```
 
-El comando ```docker exec``` nos permite **ejecutar cualquier comando** dentro del contenedor seleccionado, en este caso estamos ejecutando el bash shell.
+El comando ```docker exec``` nos permite **ejecutar cualquier comando** dentro del contenedor seleccionado.
 
 3. Detener los contenedores
     ```docker-compose down```
+
+### To-Do
+- English translate
