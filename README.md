@@ -29,7 +29,7 @@ También se incluye el fichero launch.json para utilizar xDebug en VSCode.
 Si se prefiere la aplicación de escritorio existe una versión de Docker Desktop para Mac:
 
 - [Docker Desktop para Mac](https://docs.docker.com/desktop/install/mac-install/)
-- 
+
 ### Windows
 
 - [Docker Desktop para Windows](https://docs.docker.com/desktop/install/windows-install/)
@@ -50,7 +50,7 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 
 ## Modo de uso
 
-###Levantar los contenedores
+### Levantar los contenedores
 
 ```docker-compose up -d```
 
@@ -79,4 +79,5 @@ Una vez levantados los conentedores podremos acceder al sitio accediendo a <http
 - English translate
 
 ### Problemas encontrados
+
 Los ficheros y directorios creados por Docker al levantar los contenedores pertenecen a root. No es un problema para el funcionamiento del entorno, pero da un poco la lata en algunos momentos.
