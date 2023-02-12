@@ -41,6 +41,20 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 - El directorio por defecto para la aplicación es www
 
 ## Modo de uso
-**TODO**
-1. Levantar los contenedores
-2. Acceder al shell (consola) de un contenedor
+
+###Levantar los contenedores
+```docker-compose up -d```
+
+El parámetro -d indica que queremos que se ejecute en segundo plano.
+
+### Acceder a la consola de un contenedor
+1 Obtener el id del contenedor:
+    ```docker ps```
+Con este comando listamos todos los contenedores en ejecución para poder copiar su ID
+2 Acceder a la consola
+    ```docker exec -it ID_CONTAINER /bin/bash```
+
+El comando docker exec nos permite **ejecutar cualquier comando** dentro del contenedor seleccionado, en este caso estamos ejecutando el bash shell.
+
+3. Detener los contenedores
+    ```docker-compose stop```
