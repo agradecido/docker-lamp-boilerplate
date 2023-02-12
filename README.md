@@ -89,10 +89,10 @@ Una vez levantados los conentedores podremos acceder al sitio accediendo a <http
 4. PhpMyAdmin
 5. Mailcatcher
 
-### To-Do
-
-- English translate
-
-### Problemas encontrados
+## Problemas encontrados
 
 Los ficheros y directorios creados por Docker al levantar los contenedores pertenecen a root. No es un problema para el funcionamiento del entorno, pero da un poco la lata en algunos momentos.
+
+## To-Do
+
+- English translate
