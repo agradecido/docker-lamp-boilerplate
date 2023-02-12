@@ -14,6 +14,8 @@ Incluye:
 
 También se incluye el fichero launch.json para utilizar xDebug en VSCode.
 
+Por defecto se crea una base datos ```docker``` con user ```docker``` y password ```docker```. Estos valores se pueden modificar en el fichero ```.env``` donde también podéis encontrar la password mysql de root.
+
 ## Requerimientos
 
 ### Linux
@@ -34,14 +36,6 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 
 - [Docker Desktop para Windows](https://docs.docker.com/desktop/install/windows-install/)
 
-## Contenedores incluidos
-
-1. Apache + PHP + Xdebug
-2. WP-CLI
-3. MySQL
-4. PhpMyAdmin
-5. Mailcatcher
-
 ## Configuración
 
 - Puedes seleccionar la versión de cada aplicación, el directorio de la aplicación (docroot, por defecto es ```www```), puertos y demás parámetros editando las variables de entorno en el fichero ```.env```
@@ -58,6 +52,9 @@ El parámetro -d indica que queremos que se ejecute en segundo plano.
 
 Una vez levantados los conentedores podremos acceder al sitio accediendo a <https://localhost>, PMA lo tenemos disponible en <https://localhost:8080>. Podemos modificar el dominio por uno personalizado del tipo ```proyecto-lamp.local``` editando la variable ```LOCAL_DOMAIN``` en el fichero ```.env```
 
+
+### Levantar los contenedores
+
 ### Acceder a la consola de un contenedor
 
 1. Obtener el id del contenedor:
@@ -73,6 +70,14 @@ Una vez levantados los conentedores podremos acceder al sitio accediendo a <http
 
 3. Detener los contenedores
     ```docker-compose down```
+
+## Contenedores incluidos
+
+1. Apache + PHP + Xdebug
+2. WP-CLI
+3. MySQL
+4. PhpMyAdmin
+5. Mailcatcher
 
 ### To-Do
 
