@@ -3,12 +3,15 @@
 Estructura de ficheros y directorios para iniciar un proyecto LAMP usando contenedores Docker.
 
 Incluye:
-- Apache + PHP (5.4, 5.6, 7.1, 7.2, 7.3, 7.4, 8, 8.1)
+- Apache con https
+- PHP (5.4, 5.6, 7.1, 7.2, 7.3, 7.4, 8, 8.1)
 - xDebug
 - WP-CLI
 - MySQL (mysql57, mysql8, mariadb103, mariadb104, mariadb105, mariadb106)
 - PhpMyAdmin
 - Servidor fake SMTP
+
+También se incluye el fichero launch.json para utilizar xDebug en VSCode.
 
 ## Requerimientos
 ### Linux
