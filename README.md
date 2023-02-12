@@ -53,12 +53,12 @@ Una vez levantados los conentedores podremos acceder al sitio accediendo a https
 
     ```docker ps```
 
-    Con este comando listamos todos los contenedores en ejecución para poder copiar su ID
+    Con este comando listamos todos los contenedores en ejecución para poder copiar su ID (aparece en la primera columna).
 
 2. Acceder a la consola
     ```docker exec -it ID_CONTAINER /bin/bash```
 
-El comando docker exec nos permite **ejecutar cualquier comando** dentro del contenedor seleccionado, en este caso estamos ejecutando el bash shell.
+El comando ```docker exec``` nos permite **ejecutar cualquier comando** dentro del contenedor seleccionado, en este caso estamos ejecutando el bash shell.
 
 3. Detener los contenedores
     ```docker-compose down```
