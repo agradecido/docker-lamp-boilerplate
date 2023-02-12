@@ -46,7 +46,7 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 
 - Puedes seleccionar la versión de cada aplicación, el directorio de la aplicación (docroot, por defecto es ```www```), puertos y demás parámetros editando las variables de entorno en el fichero ```.env```
 - El fichero ```php.ini``` lo tenemos en ```/config/php```
-- En el directorio config hay más ficheros de configuración por si se quiere modificar otros parámetros. En principio no hace falta tocarlos.
+- En el directorio ```config``` hay más ficheros de configuración por si se quiere modificar otros parámetros. En principio no hace falta tocarlos.
 
 ## Modo de uso
 
