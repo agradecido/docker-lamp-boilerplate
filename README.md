@@ -1,8 +1,14 @@
-# LAMP Docker scaffolding
+# Docker LAMP Stack Scaffold
 
 Estructura de ficheros y directorios para iniciar un proyecto LAMP usando contenedores Docker.
 
-Incluye Apache + PHP (5.4, 5.6, 7.1, 7.2, 7.3, 7.4, 8, 8.1) con xDebug, MySQL (mysql57, mysql8, mariadb103, mariadb104, mariadb105, mariadb106), PMA, WP-CLI y un servidor fake SMTP.
+Incluye:
+- Apache + PHP (5.4, 5.6, 7.1, 7.2, 7.3, 7.4, 8, 8.1)
+- xDebug
+- WP-CLI
+- MySQL (mysql57, mysql8, mariadb103, mariadb104, mariadb105, mariadb106)
+- PhpMyAdmin
+- Servidor fake SMTP
 
 ## Requerimientos
 ### Linux
