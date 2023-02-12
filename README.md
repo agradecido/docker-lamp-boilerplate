@@ -14,19 +14,19 @@ También se incluye el fichero launch.json para utilizar xDebug en VSCode.
 
 ## Requerimientos
 ### Linux
-- Docker https://docs.docker.com/engine/install/ubuntu/
-- Docker Compose https://docs.docker.com/compose/install/linux/
+- [Docker para Linux](https://docs.docker.com/engine/install/ubuntu/)
+- [Docker Compose para Linux](https://docs.docker.com/compose/install/linux/)
 
 ### MacOS
-- Docker https://docs.docker.com/engine/install/
-- Docker Compose https://docs.docker.com/desktop/install/mac-install/
+- [Docker para Mac](https://docs.docker.com/engine/install/)
+- [Docker Compose para Mac](https://docs.docker.com/desktop/install/mac-install/)
 
-Si se prefiere la aplicación de escritorio existe una versión de Docker Desktop para Mac
-- https://docs.docker.com/desktop/install/mac-install/
+Si se prefiere la aplicación de escritorio existe una versión de Docker Desktop para Mac:
+- [Docker Desktop para Mac](https://docs.docker.com/desktop/install/mac-install/)
 ### Windows
-- Docker Desktop https://docs.docker.com/desktop/install/windows-install/
+- [Docker Desktop para Windows](https://docs.docker.com/desktop/install/windows-install/)
 
-## Contenedores
+## Contenedores incluidos
 1. Apache + PHP + Xdebug
 2. WP-CLI
 3. MySQL
@@ -35,10 +35,9 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 
 ## Configuración
 
-- Puedes seleccionar la versión de cada aplicación, el directorio de la aplicación (docroot), puertos y demás parámetros editando el fichero .env
-- El fichero php.ini lo tenemos en /config/php
+- Puedes seleccionar la versión de cada aplicación, el directorio de la aplicación (docroot, por defecto es ```www```), puertos y demás parámetros editando las variables de entorno en el fichero ```.env```
+- El fichero ```php.ini``` lo tenemos en ```/config/php```
 - En el directorio config hay más ficheros de configuración por si se quiere modificar otros parámetros. En principio no hace falta tocarlos.
-- El directorio por defecto para la aplicación es www
 
 ## Modo de uso
 
@@ -47,14 +46,19 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 
 El parámetro -d indica que queremos que se ejecute en segundo plano.
 
+Una vez levantados los conentedores podremos acceder al sitio accediendo a https://localhost, PMA lo tenemos disponible en https://localhost:8080. Podemos modificar el dominio por uno personalizado del tipo ```proyecto-lamp.local``` editando la variable ```LOCAL_DOMAIN``` en el fichero ```.env```
+
 ### Acceder a la consola de un contenedor
-1 Obtener el id del contenedor:
+1. Obtener el id del contenedor:
+
     ```docker ps```
-Con este comando listamos todos los contenedores en ejecución para poder copiar su ID
-2 Acceder a la consola
+
+    Con este comando listamos todos los contenedores en ejecución para poder copiar su ID
+
+2. Acceder a la consola
     ```docker exec -it ID_CONTAINER /bin/bash```
 
 El comando docker exec nos permite **ejecutar cualquier comando** dentro del contenedor seleccionado, en este caso estamos ejecutando el bash shell.
 
 3. Detener los contenedores
-    ```docker-compose stop```
+    ```docker-compose down```
