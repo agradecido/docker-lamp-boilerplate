@@ -1,5 +1,4 @@
 # Docker LAMP Stack Scaffold
-
 Estructura de ficheros y directorios para iniciar un proyecto LAMP usando contenedores Docker.
 
 Incluye:
@@ -27,6 +26,13 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 ### Windows
 - Docker Desktop https://docs.docker.com/desktop/install/windows-install/
 
+## Contenedores
+1. Apache + PHP + Xdebug
+2. WP-CLI
+3. MySQL
+4. PhpMyAdmin
+5. Mailcatcher
+
 ## Configuración
 
 - Puedes seleccionar la versión de cada aplicación, el directorio de la aplicación (docroot), puertos y demás parámetros editando el fichero .env
@@ -34,14 +40,7 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 - En el directorio config hay más ficheros de configuración por si se quiere modificar otros parámetros. En principio no hace falta tocarlos.
 - El directorio por defecto para la aplicación es www
 
-## Contenedores
-
-1. Apache + PHP + Xdebug
-2. WP-CLI
-3. MySQL
-4. PhpMyAdmin
-5. Mailcatcher
-
-## Instrucciones
-1. TODO Levantar los contenedores
-2. TODO Acceder a la consola shell de un contenedor
+## Modo de uso
+**TODO**
+1. Levantar los contenedores
+2. Acceder al shell (consola) de un contenedor
