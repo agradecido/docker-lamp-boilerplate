@@ -62,8 +62,8 @@ El parámetro -d indica que queremos que se ejecute en segundo plano.
 
 Una vez levantados los conentedores podremos acceder al sitio accediendo a <https://localhost>, PMA lo tenemos disponible en <https://localhost:8080>. Podemos modificar el dominio por uno personalizado del tipo ```proyecto-lamp.local``` editando la variable ```LOCAL_DOMAIN``` en el fichero ```.env```
 
-
-### Levantar los contenedores
+### Detener los contenedores
+```docker-compose down```
 
 ### Acceder a la consola de un contenedor
 
@@ -77,9 +77,6 @@ Una vez levantados los conentedores podremos acceder al sitio accediendo a <http
     ```docker exec -it ID_CONTAINER /bin/bash```
 
     El comando ```docker exec``` nos permite **ejecutar cualquier comando** dentro del contenedor seleccionado.
-
-3. Detener los contenedores
-    ```docker-compose down```
 
 ## Contenedores incluidos
 
