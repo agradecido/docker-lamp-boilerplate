@@ -30,9 +30,9 @@ Si se prefiere la aplicación de escritorio existe una versión de Docker Deskto
 
 ## Qué incluye este repositorio
 
-Estructura de ficheros y directorios para iniciar un proyecto LAMP usando contenedores Docker.
+Este repositorio incluye la estructura básica de ficheros y directorios para iniciar un proyecto LAMP usando contenedores Docker y docker-compose.
 
-Incluye:
+Proporciona los siguientes servicios:
 
 - Apache con https
 - PHP (5.4, 5.6, 7.1, 7.2, 7.3, 7.4, 8, 8.1)
