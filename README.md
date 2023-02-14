@@ -8,6 +8,8 @@
 
 ```docker-compose up -d```
 
+Nota: debemos tener libres los puertos que utilizan los servicios.
+
 ## Requerimientos
 
 ### Linux
