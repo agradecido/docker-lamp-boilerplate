@@ -1,6 +1,6 @@
 # Docker LAMP Stack Scaffold
 
-Apache, PHP, xDebug, MySQL (o Maria DB), WP-CLI fake SMTP server and phpMyAdmin.
+Apache, PHP, xDebug, MySQL (o Maria DB), WP-CLI, fake SMTP server and phpMyAdmin.
 
 ## Puesta en marcha rápida
 
