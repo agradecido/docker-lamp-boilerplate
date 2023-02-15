@@ -1,5 +1,7 @@
 # Docker LAMP Stack Scaffold
 
+Apache, PHP, xDebug, MySQL (o Maria DB), WP-CLI fake SMTP server and phpMyAdmin.
+
 ## Puesta en marcha rápida
 
 ```git clone https://github.com/agradecido/docker-lamp-scaffold```
