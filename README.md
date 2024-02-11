@@ -1,4 +1,4 @@
-# Docker LAMP Stack Scaffold
+# Docker LAMP Stack Boilerplate
 
 Apache, PHP, xDebug, MySQL (o Maria DB), WP-CLI, fake SMTP server and phpMyAdmin.
 
@@ -39,12 +39,13 @@ Este repositorio incluye la estructura básica de ficheros y directorios para in
 Proporciona los siguientes servicios:
 
 - Apache con https
-- PHP (5.4, 5.6, 7.1, 7.2, 7.3, 7.4, 8, 8.1)
+- PHP (5.4, 5.6, 7.1, 7.2, 7.3, 7.4, 8, 8.1, 8.2)
+- Servidor fake SMTP
 - xDebug
 - WP-CLI
 - MySQL (mysql57, mysql8, mariadb103, mariadb104, mariadb105, mariadb106)
 - PhpMyAdmin
-- Servidor fake SMTP
+
 
 También se incluye el fichero launch.json para utilizar xDebug en VSCode.
 
@@ -96,4 +97,5 @@ Los ficheros y directorios creados por Docker al levantar los contenedores perte
 
 ## To-Do
 
-- English translate
+- Translate to English
+- Add Nodejs container
