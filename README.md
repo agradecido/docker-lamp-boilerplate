@@ -1,6 +1,6 @@
 # Docker LAMP Stack Boilerplate
 
-Apache, PHP, xDebug, MySQL (o Maria DB), WP-CLI, fake SMTP server and phpMyAdmin.
+Apache, PHP, xDebug, MySQL (o MariaDB), WP-CLI, fake SMTP server and phpMyAdmin.
 
 ## Puesta en marcha rápida
 
@@ -52,7 +52,10 @@ También se incluye el fichero launch.json para utilizar xDebug en VSCode.
 Por defecto se crea una base datos ```docker``` con user ```docker``` y password ```docker```. Estos valores se pueden modificar en el fichero ```.env``` donde también podéis encontrar la password mysql de root.
 
 ## Configuración
-
+- Lo primero copia o mueve el fichero ```.env.example``` a ```.env```, puedes hacerlo con este comando (en Linux):
+  ```shell
+  cp .env.example .env
+  ```
 - Puedes seleccionar la versión de cada aplicación, el directorio de la aplicación (docroot, por defecto es ```www```), puertos y demás parámetros editando las variables de entorno en el fichero ```.env```
 - El fichero ```php.ini``` lo tenemos en ```/config/php```
 - En el directorio ```config``` hay más ficheros de configuración por si se quiere modificar otros parámetros. En principio no hace falta tocarlos.
