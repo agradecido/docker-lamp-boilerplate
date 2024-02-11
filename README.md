@@ -1,4 +1,4 @@
-# Docker LAMP Stack Boilerplate
+# Docker LAMP Stack Boilerplate with NodeJS and WP-CLI
 
 Apache, PHP, xDebug, MySQL (o MariaDB), WP-CLI, fake SMTP server and phpMyAdmin.
 
@@ -41,22 +41,21 @@ Proporciona los siguientes servicios:
 - Apache con https
 - PHP (5.4, 5.6, 7.1, 7.2, 7.3, 7.4, 8, 8.1, 8.2)
 - Servidor fake SMTP
-- xDebug
+- xDebug (incluye el fichero launch.json para utilizar xDebug en VSCode)
 - WP-CLI
 - MySQL (mysql57, mysql8, mariadb103, mariadb104, mariadb105, mariadb106)
 - PhpMyAdmin
-
-
-También se incluye el fichero launch.json para utilizar xDebug en VSCode.
+- NodeJS
 
 Por defecto se crea una base datos ```docker``` con user ```docker``` y password ```docker```. Estos valores se pueden modificar en el fichero ```.env``` donde también podéis encontrar la password mysql de root.
 
 ## Configuración
 - Lo primero copia o mueve el fichero ```.env.example``` a ```.env```, puedes hacerlo con este comando (en Linux):
+- 
   ```shell
   cp .env.example .env
   ```
-- Puedes seleccionar la versión de cada aplicación, el directorio de la aplicación (docroot, por defecto es ```www```), puertos y demás parámetros editando las variables de entorno en el fichero ```.env```
+- Puedes seleccionar la versión de cada aplicación, el directorio de la aplicación (por defecto es ```www```), puertos y demás parámetros editando las variables de entorno en el fichero ```.env```
 - El fichero ```php.ini``` lo tenemos en ```/config/php```
 - En el directorio ```config``` hay más ficheros de configuración por si se quiere modificar otros parámetros. En principio no hace falta tocarlos.
 
@@ -93,6 +92,7 @@ Una vez levantados los conentedores podremos acceder al sitio accediendo a <http
 3. MySQL
 4. PhpMyAdmin
 5. Mailcatcher
+6. NodeJS
 
 ## Problemas encontrados
 
