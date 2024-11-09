@@ -4,9 +4,9 @@ Apache, PHP, xDebug, MySQL (o MariaDB), WP-CLI, fake SMTP server and phpMyAdmin.
 
 ## Puesta en marcha rápida
 
-```git clone https://github.com/agradecido/docker-lamp-scaffold```
+```git clone https://github.com/agradecido/docker-lamp-boilerplate```
 
-```cd docker-lamp-scaffold```
+```cd docker-lamp-boilerplate```
 
 ```docker-compose up -d```
 
